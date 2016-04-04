@@ -28,26 +28,26 @@
 ```
 ## 如何安装？
 
-1. 安装 node.js
-
-2. cd /your/file/path/PC-WEBSITE
-
-3. npm install
-
-4. gulp
+	1. 安装 node.js并全局安装gulp
+	2. cd /your/file/path/com.iydsj.website.pc
+	3. npm install
+	4. gulp
 
 ## 打包方式
 
-js打包 
+js打包
+
     * 一个页面打包一个js文件
     * 所有的类库打包成一个core_js文件
     * 开发过程中使用 js-dev中的文件 ，上线前统一改成 js目录下的.min文件
 
 css打包
+
     * 第三方的类库
     * 所有页面引用的css打包成一个css文件
     
 ## 如何在Less寻找需要找到的样式并修改？
+
     1. 通过chrome浏览器找到根级class
     2. 根据根级class名找到对应less文件
     3. 在对应的less文件中修改需要修改的部分，并保持css命名空间规范
