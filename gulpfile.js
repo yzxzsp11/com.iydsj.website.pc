@@ -14,6 +14,7 @@ var paths = {
   watchStyleSheets:'src/less/**/*.less',
   htmlFiles:'./src/html/*.html',
   picFiles:'src/images/**/*.*',
+  libFiles:'src/js/lib/**/*.js'
 };
 
 
@@ -52,6 +53,11 @@ gulp.task('movePic',function () {
   return gulp.src(paths.picFiles)
       .pipe(gulp.dest('dist/images'));
 });
+gulp.task('moveLib',function () {
+  return gulp.src(paths.libFiles)
+      .pipe(gulp.dest('dist/js/lib'));
+});
+
 
 gulp.task('buildHtml', function () {
   return gulp.src(paths.htmlFiles)
@@ -59,4 +65,4 @@ gulp.task('buildHtml', function () {
 });
 
 // The default task (called when you run `gulp` from cli)
-gulp.task('default', [ 'watch', 'less','buildHtml','movePic','buildjs']);
+gulp.task('default', [ 'watch', 'less','buildHtml','movePic','moveLib','buildjs']);

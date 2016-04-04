@@ -21,6 +21,6 @@ $(function () {
 	btnDownloadAnimate();
 
 	imageLazyLoader({
-		transparentPng:"../images/transparent.png"
+		transparentPng:"./images/transparent.png"
 	});
 });
