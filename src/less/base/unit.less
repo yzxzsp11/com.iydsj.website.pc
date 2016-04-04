@@ -1,0 +1,90 @@
+/**
+    @media    
+*/
+@media(max-width:1000px){
+    .container{
+        width: auto!important;
+        padding:0!important;
+    }
+}
+.container{
+	width: @container_width;
+	height: @container_height;
+	padding: 0 15px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.u-relative{
+  position: relative;
+}
+.u-absolute{
+	position: absolute;
+	top: 0;
+
+}
+.u-fixed{
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+.u-logo{
+	width: 40px;
+	height: 40px;
+	background-image: url(@banner_url);
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+.phonenumber_color{
+	color: @phonenumber_color;
+}
+.clearfix{
+	clear: both;
+	overflow: hidden;
+}
+.clearfix::after,.clearfix::before{
+	clear: both;
+	content: " ";
+
+}
+.btn{
+	text-decoration: none;
+	color: #000;
+	display: block;
+
+}
+
+.li_end{
+	margin-right: 0!important;
+}
+.text_left{
+	text-align: left;
+}
+.text_right{
+	text-align: right;
+}
+.back_to_top{
+	display: block;
+	background-image: url(../images/back_to_top.png);
+	position: fixed;
+	bottom: 150px;
+	right:40px;
+	width: 40px;
+	height:40px;
+
+	cursor: pointer;
+
+	&:hover{
+		background-image: url(../images/back_to_top_active.png);
+	}
+}
+.lazy{
+	background-color: transparent;
+	background-image: url(../images/loading100_100.png);
+	background-position: center;
+	background-repeat:no-repeat;
+	min-height: 150px;
+}
+.lazy.lazy_small{
+	background-image: url(../images/lazy40_40.png);
+}

@@ -1,0 +1,66 @@
+.tab{
+	.tab_top { 
+		height: @tab_header_height;
+	}
+	.tab_header {
+		background-color: @white_color; 
+		width: 100%;
+		border-bottom: 1px solid @border_color;
+		ul{
+			height: @tab_header_height;
+			li{
+
+				float: left;
+				height: 30px;
+				margin-top: 25px;
+				margin-right: 20px;
+				a{
+					color: @gray_color;font-size: 14px;
+					
+					text-decoration: none;
+					padding: 0 28px;
+					line-height: 30px;
+					text-align: center;
+					&.active{
+						display: block;
+						color: @white_color;
+						background-color: @active_color;
+					}
+				}
+			}
+		}
+	}
+
+	.tab_content{
+		border-top: 1px solid @border_color;
+		.tab_content_title{
+			font-size: 30px;
+			line-height: 30px;
+			color: @formal_color;
+			text-align: center;
+			font-weight: normal;
+			margin-top: 0;
+			padding-top: 120px;
+			margin-bottom: 80px;
+		}
+		.tab_paragraph{
+			color: @gray_color;
+			text-align: center;
+
+			li{
+				margin-bottom: 15px;
+				font-size: 14px;
+			}
+
+			&.tab_paragraph_eng{
+				margin-top: 4px;
+				margin-bottom: 200px;
+				
+				li{
+					line-height: 14px;
+					font-family: "微软雅黑";
+				}
+			}
+		}
+	}
+}

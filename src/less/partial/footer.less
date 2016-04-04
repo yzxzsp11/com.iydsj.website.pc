@@ -1,0 +1,147 @@
+.footer{
+	width: 100%;
+	min-width:1000px;
+	padding-top: @footer_padding_top;
+	height: @footer_height;
+	background-color: @footer_bg;
+
+	&>.container{
+		position: relative;
+		overflow: visible;
+	}
+	.download_area{
+		
+		right: 70px;
+		position: absolute;
+		width: 204px;
+
+		.btn_download{
+			width: 200px;
+			height: 56px;
+			border-radius: 30px;
+			border: 2px solid @active_color;
+			text-align: center;
+			line-height: 56px;
+			color: @active_color;
+			font-style: italic;
+			font-size: 20px;
+			margin: 0 auto;
+		}
+		.download_area_content{
+			color: #808080;
+			margin-top: 15px;
+			text-align: center;
+		}
+		.qrCode_area{
+			display: none;
+			position: relative;
+			&>img{
+				position: absolute;
+			    top: -42px;
+			    display: block;
+			    width: 150px;
+			    height: 150px;
+			    margin-left: -75px;
+			    left: 50%;
+			    margin-top: 30px;
+			}
+		}
+		p.download_help{
+			text-align: center;
+			margin: 0;
+			margin-top: 15px;
+			color: #ccc;
+			line-height: 12px;
+		}
+
+		&.show_qr{
+			.btn_download{
+				display: none;
+			}
+			.download_area_content{
+				display: none;
+			}
+			.qrCode_area{
+				display: block;
+				&>img{
+					top: 0px;
+				}
+				.close_download{
+					margin-bottom: 30px;
+					text-align: center;
+					a{
+						color: @gray_color;	
+					}
+					
+				}
+			}
+		}
+	}
+}
+.footer_title{
+	font-size:@footer_title_size;
+	color:@footer_title_color;
+	margin-bottom: 20px;
+}
+.footer_content {
+	.content_paragraph{
+		li{
+			color: #ccc;
+			margin-bottom: 14px;
+		}
+	}
+	.content_line{
+		color: #ccc;
+	}
+	.follow_line{
+		color: #ccc;
+		margin-top: 75px;
+		margin-bottom: 50px;
+		float: left;
+	}
+	.org_info{
+		color: @white_color;
+		margin-bottom: 10px;
+		&>.gap{
+			margin-right:3px;
+		}
+		&>a{
+			color: @white_color;
+			text-decoration: none;
+			margin-right:3px;
+		}
+	}
+	.u-wx,
+	.u-xl{
+		width: 40px;
+		height: 40px;
+		background-size: 40px 40px;
+		float: left;
+	}
+	
+	.u-wx{
+		background-image: url(../images/wx.png);
+		margin-left: 30px;
+		margin-top: 65px;
+	}
+	.u-wx:hover{
+		background-image: url(../images/wxhover.png);
+	}
+	.u-xl{
+		background-image: url(../images/xl.png);
+		margin-left: 20px;
+		margin-top: 65px;
+	}
+	.u-xl:hover{
+		background-image: url(../images/xlhover.png);
+	}
+	.u-wxgzpt{
+		background-image: url(../images/wxgzpt.png);
+		float: left;
+		width: 70px;
+		height: 70px;
+		margin-left: 10px;
+		margin-top: 50px;
+		display: none;
+	}
+}

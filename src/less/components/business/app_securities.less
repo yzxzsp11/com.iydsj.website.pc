@@ -1,0 +1,59 @@
+.app_securities{
+	margin-bottom: 120px;
+
+	.tab_paragraph_eng{
+		margin-bottom: 120px!important;
+	}
+	.app_security_list{
+		margin-bottom: 50px;
+		&>ul{
+			margin: 0 auto;
+			&>li{
+				float: left;
+				background-image: url(@security_url);
+				width: 144px;
+				height: 166px;
+				margin-right: 17px;
+			}
+		}
+		.app_security_row_1{
+			width: 466px;
+			
+		}
+		.app_security_row_2{
+			width: 305px;
+			margin-top: -25px;
+
+		}
+		.app_security_line{
+			margin-top: 55px;
+			li{
+				text-align: center;
+				&:nth-of-type(1){
+					font-size: 14px;
+					line-height: 14px;
+					color: @formal_color;
+					margin-bottom: 14px;
+				}	
+				
+				&:nth-of-type(2),&:nth-of-type(3){
+					font-size: 12px;
+					line-height: 12px;
+					margin-bottom: 5px;
+					color: @gray_color;
+				}
+			}
+		}
+	}
+	.app_securities_go{
+		.btn_securities{
+			width: 130px;
+			height: 40px;
+			color: @white_color;
+			text-align: center;
+			line-height: 40px;
+			background-color: @active_color ;
+			margin: 0 auto;
+		}
+	}
+}
